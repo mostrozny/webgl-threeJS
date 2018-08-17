@@ -186,8 +186,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const getLength = document.querySelector('#length').value;
         const getWidth = document.querySelector('#width').value;
         const getHeight = document.querySelector('#height').value;
-
+        console.log(objects);
         createABox(getLength, getWidth, getHeight);
+    });
+    const rotate = document.querySelector('.rotateBox');
+    rotate.addEventListener('click', function () {
+        const getX = document.querySelector('#rotateX').value;
+        const getY = document.querySelector('#rotateY').value;
+        const getZ = document.querySelector('#rotateZ').value;
+        console.log(objects[0].rotation);
+        objects[0].rotation.x = Math.PI / getX;
+        objects[0].rotation.y = Math.PI / getY;
+        objects[0].rotation.z = Math.PI / getZ;
+
+        //createABox(getLength, getWidth, getHeight);
     });
 
     function onWindowResize() {

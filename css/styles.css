@@ -53,3 +53,20 @@ body {
 #createElement div {
     padding: 10px;
 }
+
+#rotateElement {
+    position: absolute;
+    font-size: 12px;
+    z-index: 20;
+    color: white;
+    top: 50px;
+    right: 50px;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#rotateElement div {
+    padding: 10px;
+}
